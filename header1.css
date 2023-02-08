@@ -1,0 +1,116 @@
+@charset 'utf-8';
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mw: 1440px;
+  --gap1: 16px;
+  --gap2: 8px;
+  --point_c1: #ff6b00;
+}
+.hd {
+  max-width: var(--mw);
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.top_fun {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--gap2) 0;
+}
+.top_fun > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: var(--gap2);
+  margin-left: var(--gap2);
+  transition: 0.3s;
+}
+.top_fun > button:hover {
+  color: var(--point_c1);
+}
+.fa-sun {
+  display: none;
+}
+
+.btn_dark.on .fa-sun {
+  display: block;
+}
+.btn_dark.on .fa-moon {
+  display: none;
+}
+
+.top_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap2) 0;
+}
+.top_nav img {
+  width: 100%;
+}
+
+.top_nav .logo,
+.btn_service {
+  width: 180px;
+}
+
+.btn_service {
+  text-align: right;
+}
+.btn_service span {
+  background-color: var(--point_c1);
+  color: white;
+  padding: var(--gap2) var(--gap1);
+  display: inline-block;
+  border-radius: var(--gap2);
+}
+.gnb {
+  display: flex;
+  /* flex-grow: 1; */
+  /* justify-content: flex-end; */
+  /* padding-left: calc(var(--gap1) * 4); */
+}
+.gnb a {
+  padding: var(--gap2) var(--gap1);
+  text-decoration: none;
+  color: #333;
+  /* border: 1px solid gray; */
+  transition: 0.3s;
+  position: relative;
+}
+.gnb a::before,
+.gnb a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  /* height: 100%; */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* background-color: var(--point_c1); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+.gnb a::after {
+  border-width: 3px;
+  transform: translate(-50%, -50%) scale(0);
+}
+.gnb a:hover::before,
+.gnb a:hover::after {
+  opacity: 1;
+}
+.gnb a:hover::after {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.gnb a:hover {
+  color: var(--point_c1);
+}
