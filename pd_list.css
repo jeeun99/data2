@@ -1,0 +1,154 @@
+@charset 'utf-8';
+
+:root {
+}
+.sec1 {
+  background-color: lightgray;
+  overflow: hidden;
+}
+.slide1 {
+  border: 1px solid blue;
+  max-width: 1400px;
+  height: 500px;
+  overflow: visible;
+}
+.swiper-wrapper {
+  border: 5px solid lightcoral;
+}
+.slide1 .swiper-slide {
+  /* border: 10px solid lightgreen; */
+  padding: 16px;
+}
+.next1 {
+  right: -50px;
+}
+.prev1 {
+  right: -50px;
+}
+/* .slide01 {
+  background-color: lightcoral;
+}
+.slide02 {
+  background-color: lightgreen;
+}
+.slide03 {
+  background-color: purple;
+} */
+
+/*  */
+.product {
+  width: 200px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.product > div {
+  border: 2px solid dodgerblue;
+}
+
+.front {
+  /* padding: 1rem; */
+  position: relative;
+  background-color: #f5f5f5;
+}
+.front .level {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.level_y {
+  background-color: yellow;
+  border: 3px solid rgba(255, 238, 0, 0.5);
+}
+.level_r {
+  background-color: red;
+  border: 3px solid rgba(255, 0, 0, 0.5);
+}
+.front img {
+  width: 100%;
+}
+.front .pd_detail {
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+  color: gray;
+}
+.front .pd_detail span {
+  display: block;
+  text-align: center;
+}
+
+.back {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: 0.5s;
+  color: white;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+.product:hover .back {
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.star_detail {
+  padding-top: 3rem;
+  width: 80%;
+}
+.star_detail > p > span:first-of-type {
+  font-weight: bold;
+  color: yellow;
+  display: inline-block;
+  width: 35%;
+}
+.star_detail > p > span:last-of-type {
+  width: 65%;
+  display: inline-block;
+}
+.graph {
+  display: flex;
+  align-items: center;
+}
+.graph span:last-of-type {
+  background-color: gainsboro;
+  border-radius: 20px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.graph span:last-of-type::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: yellow;
+  border-radius: 20px;
+}
+.p80::before {
+  width: 80%;
+}
+.p50::before {
+  width: 50%;
+}
+.p30::before {
+  width: 30%;
+}
+.p20::before {
+  width: 20%;
+}
