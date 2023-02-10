@@ -2,13 +2,16 @@
 
 :root {
 }
-.sec1 {
-  background-color: lightgray;
+.wrap {
   overflow: hidden;
 }
+.sec1 {
+  background-color: #eaeaea;
+  /* overflow: hidden; */
+}
 .slide1 {
-  border: 1px solid blue;
-  max-width: 1400px;
+  /* border: 1px solid blue; */
+  max-width: 1200px;
   /* height: 500px; */
   overflow: visible;
 }
@@ -17,13 +20,17 @@
 }
 .slide1 .swiper-slide {
   /* border: 10px solid lightgreen; */
-  padding: 16px;
+  /* padding: 16px; */
 }
 .next1 {
   right: -50px;
 }
 .prev1 {
   right: -50px;
+}
+.pg1 {
+  bottom: -50px !important;
+  top: auto;
 }
 .pg1 .swiper-pagination-bullet {
   background-color: purple;
@@ -41,18 +48,20 @@
 /*  */
 .product {
   /* width: 200px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
   overflow: hidden;
+  margin: 1rem;
 }
 .product > div {
-  border: 2px solid dodgerblue;
+  /* border: 2px solid dodgerblue; */
 }
 
 .front {
   /* padding: 1rem; */
   position: relative;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .front .level {
   position: absolute;
@@ -112,7 +121,7 @@
 }
 
 .star_detail {
-  padding-top: 3rem;
+  padding-top: 1rem;
   width: 80%;
 }
 .star_detail > p > span:first-of-type {
