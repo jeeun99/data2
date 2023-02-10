@@ -1,0 +1,23 @@
+.sec1 h1 {
+  max-width: 1440px;
+  margin: auto;
+  border-bottom: 1px solid gray;
+  padding: 2rem 0;
+}
+
+.slide1 {
+  /* width: 300px; */
+  margin: auto;
+  overflow: visible;
+}
+
+.sec1 .swiper-slide {
+  /* width: 300px; */
+  background-color: antiquewhite;
+  height: 300px;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+.sec1 .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+}
